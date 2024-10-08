@@ -4,42 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reflection</title>
-
-    <!-- Include PyScript CDN -->
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-
-    <!-- Add custom styling -->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f9;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: rgb(36, 37, 37);
+        }
+
+        h1 {
+            color: #d6d6d6;
         }
 
         .styled-paragraph {
-            color: #333;
-            font-size: 1.2em;
-            background-color: #e0f7fa;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
             padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #00796b;
-            width: 50%;
-            margin: 20px auto;
-            /* Add margin between paragraphs */
-            margin-bottom: 20px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            background-color: #686868;
+        }
+
+        p {
+            margin-bottom: 5px;
         }
 
         .styled-paragraph p {
-            margin-bottom: 20px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        h2 {
+            color: #929292;
+            margin-top: 20px;
+        }
+
+        p {
+            color: #929292;
         }
     </style>
 </head>
 <body>
-
     <h1>Data Privacy & Cybersecurity Reflection</h1>
-
-    <!-- Define a div to hold the paragraph -->
     <div id="output" class="styled-paragraph"></div>
 
     <!-- PyScript block -->
